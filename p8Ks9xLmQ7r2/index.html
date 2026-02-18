@@ -13,9 +13,15 @@ body{
   font-family:sans-serif;
   text-align:center;
   padding:15px;
-  background-color:#fdfdfd;
+
+  /* 背景：青系ハニカムパターン */
+  background-color:#e6f0ff; /* 薄い青ベース */
+  background-image:
+    repeating-linear-gradient(30deg, #90c3ff 0, #90c3ff 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(150deg, #90c3ff 0, #90c3ff 1px, transparent 1px, transparent 20px);
 }
 
+/* 見出し */
 h2{
   margin-bottom:20px;
   font-size:22px;
@@ -24,8 +30,8 @@ h2{
 /* ボタン共通 */
 a{
   display:block;
-  width:100%;             /* 横幅フル */
-  max-width:420px;        /* 大画面では広がりすぎ防止 */
+  width:100%;             
+  max-width:420px;        
   margin:10px auto;
   padding:14px;
   border-radius:12px;
