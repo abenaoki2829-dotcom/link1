@@ -14,17 +14,19 @@ body{
   text-align:center;
   padding:15px;
 
-  /* 背景：青系ハニカムパターン */
-  background-color:#e6f0ff; /* 薄い青ベース */
-  background-image:
-    repeating-linear-gradient(30deg, #90c3ff 0, #90c3ff 1px, transparent 1px, transparent 20px),
-    repeating-linear-gradient(150deg, #90c3ff 0, #90c3ff 1px, transparent 1px, transparent 20px);
+  /* PNG背景 */
+  background-image:url("honeycomb.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-color:#000; /* 読み込み失敗時の予備色 */
 }
 
 /* 見出し */
 h2{
   margin-bottom:20px;
   font-size:22px;
+  color:#fff; /* 背景に合わせて白文字 */
 }
 
 /* ボタン共通 */
