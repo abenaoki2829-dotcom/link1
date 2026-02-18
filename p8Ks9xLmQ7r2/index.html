@@ -11,15 +11,18 @@
 body{
   font-family:sans-serif;
   text-align:center;
-  padding:15px;
   margin:0;
-  background-color:#fdfdfd;
+  padding:15px;
+  min-height:100vh;
 
   /* 背景画像 */
-  background-image:url("honeycomb2.jpeg");
+  background-image:url("honeycomb.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
+
+  /* ↓これが重要（自動安全余白） */
+  padding-bottom:25vh;
 }
 
 h2{
@@ -50,7 +53,7 @@ a{
   background:#00a500;
 }
 
-/* X */
+/* Twitter（X） */
 .x{
   background:#1DA1F2;
 }
