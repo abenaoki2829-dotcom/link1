@@ -13,19 +13,28 @@ body{
   font-family:sans-serif;
   text-align:center;
   padding:15px;
-  background-color:#fdfdfd;
+  padding-top:80px; /* 上に少し余白 */
+
+  /* PNG背景 */
+  background-image:url("honeycomb.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center 70%; /* 少し下寄せ */
+  background-color:#000;
 }
 
+/* 見出し */
 h2{
   margin-bottom:20px;
   font-size:22px;
+  color:#fff;
 }
 
 /* ボタン共通 */
 a{
   display:block;
-  width:100%;             /* 横幅フル */
-  max-width:420px;        /* 大画面では広がりすぎ防止 */
+  width:100%;             
+  max-width:420px;        
   margin:10px auto;
   padding:14px;
   border-radius:12px;
@@ -58,8 +67,8 @@ a{
 
 <h2>Naoki Abe</h2>
 
-<a href=" " class="line">LINEで追加</a>
-<a href=" " class="x">Twitter</a>
+<a href="https://line.me/ti/p/BpWQUfmjFp" class="line">LINEで追加</a>
+<a href="https://x.com/abenaoki28291?s=21&t=jBTe9fimEV1uIkfYC6Bjrg" class="x">Twitter</a>
 
 </body>
 </html>
